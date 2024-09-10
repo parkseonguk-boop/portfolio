@@ -1,0 +1,125 @@
+#introduce {
+  width: 100%;
+  height: 100vh; /* 화면 높이만큼 채워서 세로 중앙 정렬 */
+  background: linear-gradient(135deg, #1a1a1a, #000000); /* 그라데이션 배경 */
+  color: #fff;
+  box-sizing: border-box;
+
+  /* 섹션을 화면 중앙에 정렬하기 위한 플렉스 설정 */
+  display: flex;
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  padding: 30px; /* 약간의 여백 */
+}
+
+.introduce-wrap {
+  display: flex;
+  justify-content: space-between; /* 내부 요소를 좌우로 배치 */
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 300px; /* 왼쪽과 오른쪽 영역 사이의 간격을 50px로 설정 */
+}
+.profile-section {
+  text-align: center;
+  width: 38%; /* 왼쪽 프로필 섹션의 너비 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-section img {
+  width: 220px; /* 프로필 이미지 크기 */
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
+}
+
+.profile-section h2 {
+  font-size: 28px; /* 더 큰 폰트 크기 */
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.profile-section p {
+  font-size: 18px;
+  color: #ccc; /* 약간 밝은 회색으로 텍스트 톤 변경 */
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%; /* 동그란 아이콘 모양 */
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.1); /* 투명한 배경 */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
+  transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.1); /* 호버 시 확대 효과 */
+}
+
+.details-section {
+  width: 55%; /* 오른쪽 디테일 섹션의 너비 */
+  display: flex;
+  flex-direction: column; /* 내부 요소들을 세로로 나열 */
+  gap: 50px; /* 각 요소 사이의 간격 */
+  margin-left: 50px;
+  margin-top: 100px;
+}
+
+.details-section .content-block {
+  display: flex;
+  flex-direction: column; /* 텍스트와 이미지를 세로로 배치 */
+  gap: 15px;
+}
+
+.details-section h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-align: left; /* 제목을 왼쪽 정렬 */
+  margin-bottom: 20px;
+}
+
+.details-section p {
+  font-size: 16px;
+  color: #ddd;
+  line-height: 1.6;
+  text-align: left; /* 본문을 왼쪽 정렬 */
+  margin: 0;
+}
+
+.details-section .education img {
+  width: 200px; /* 너비를 200px로 설정 */
+  height: auto; /* 높이는 자동으로 설정하여 비율을 유지 */
+  margin-left: 20px;
+  object-fit: contain; /* 비율 유지하면서 이미지가 컨테이너에 맞게 조정됨 */
+}
+
+.details-section .skill-icons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* 아이콘이 넘칠 경우 줄바꿈 */
+}
+
+.skill-icons img {
+  width: 40px;
+  height: 40px;
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1));
+}

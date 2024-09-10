@@ -1,0 +1,78 @@
+#content1 {
+  width: 100%;
+  padding: 50px 0;
+  background: linear-gradient(135deg, #1a1a1a, #000); /* 그라데이션 추가 */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content1-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+  margin-right: 70px;
+  transform: translate(50px, 70px);
+}
+
+.content-item {
+  display: flex;
+  gap: 0px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 30px; /* 패딩을 약간 더 추가 */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* 그림자 크기와 투명도를 높임 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-item:hover {
+  transform: translateY(-10px); /* 호버 시 살짝 떠오르는 효과 */
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.3); /* 호버 시 그림자 강화 */
+}
+
+.content-text {
+  width: 60%;
+  color: #333; /* 텍스트 색상을 더 부드러운 색으로 변경 */
+  text-align: left;
+}
+
+.content-text h3 {
+  font-size: 20px; /* 폰트 크기를 조금 키움 */
+  font-weight: bold;
+  margin-bottom: 15px; /* 간격을 좀 더 넓힘 */
+  color: #ff6347; /* 강조되는 제목에 색상 추가 */
+}
+
+.content-text h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #212121;
+}
+
+.content-text p {
+  font-size: 16px;
+  line-height: 1.6; /* 가독성을 위해 줄간격 조정 */
+  margin-bottom: 10px;
+  color: #555; /* 본문 색상 약간 조정 */
+}
+
+.content-video {
+  width: 35%;
+  margin-left: -150px; 
+}
+
+.content-video video {
+  width: 550px;
+  height: 260px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); /* 비디오에도 살짝 그림자 추가 */
+  transition: transform 0.3s ease;
+}
+
+.content-video video:hover {
+  transform: scale(1.05); /* 호버 시 살짝 확대되는 효과 */
+}

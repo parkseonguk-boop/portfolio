@@ -1,0 +1,120 @@
+/* 공통 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 16px;
+  background-color: #fff;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+/* 기본 스타일 */
+
+.wrap {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#home,
+#introduce,
+#content1,
+#study {
+  height: 900px;
+}
+#content2 {
+  height: 1000px;
+}
+section {
+  position: relative;
+  width: 100%;
+  background-color: #eee;
+}
+
+section p {
+  position: static; /* 기본 흐름에 따라 텍스트 배치 */
+  transform: none; /* 중앙 이동 변환 제거 */
+  text-align: left; /* 텍스트 왼쪽 정렬 */
+  margin: 20px; /* 여백 추가 */
+}
+
+#home h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#study {
+  height: calc(100vh - 100px);
+}
+
+.footer {
+  height: 100px;
+}
+
+.home-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.introduce-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.profile-section {
+  text-align: center;
+}
+
+.profile-section img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.details-section {
+  text-align: left;
+}
+
+.details-section .skill-icons {
+  display: flex;
+  gap: 15px;
+}

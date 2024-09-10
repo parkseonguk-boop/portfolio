@@ -1,0 +1,68 @@
+/* 푸터 스타일 */
+footer {
+  background-color: rgb(245, 245, 245); /* 밝은 흰색 배경으로 변경 */
+  color: black;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center; /* 푸터 전체 중앙 정렬 */
+  align-items: center;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 푸터 상단에 약간의 그림자 추가 */
+}
+
+.footer-wrap {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: relative; /* 가운데 텍스트를 위한 상대 위치 설정 */
+}
+
+/* 가운데에 텍스트 배치 */
+.footer-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+/* 연락처와 소셜 미디어 섹션 */
+.footer-contact,
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-contact p,
+.footer-social p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+}
+
+.footer-contact img,
+.footer-social img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0); /* 아이콘 색상을 검정으로 변경 */
+}
+
+.social2-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social2-icons a img {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  padding: 5px;
+  filter: brightness(0); /* 소셜 아이콘 색상을 검정으로 변경 */
+}
