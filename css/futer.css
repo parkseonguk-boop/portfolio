@@ -1,14 +1,15 @@
 /* 푸터 스타일 */
 footer {
-  background-color: rgb(245, 245, 245); /* 밝은 흰색 배경으로 변경 */
-  color: black;
-  padding: 20px 0;
+  background-color: rgb(209, 209, 209); /* 좀 더 부드러운 흰색 배경 */
+  color: #333; /* 텍스트 색상을 어두운 회색으로 */
+  padding: 40px 0; /* 상하 패딩을 넉넉하게 설정 */
   display: flex;
-  justify-content: center; /* 푸터 전체 중앙 정렬 */
+  justify-content: center;
   align-items: center;
   font-size: 14px;
   border-top: 1px solid #ddd;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 푸터 상단에 약간의 그림자 추가 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* 푸터 상단에 부드러운 그림자 추가 */
+  font-family: "Arial", sans-serif; /* 깔끔한 폰트 사용 */
 }
 
 .footer-wrap {
@@ -18,8 +19,8 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
-  position: relative; /* 가운데 텍스트를 위한 상대 위치 설정 */
+  padding: 0 30px;
+  position: relative;
 }
 
 /* 가운데에 텍스트 배치 */
@@ -28,6 +29,17 @@ footer {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+  color: #444; /* 텍스트 색상을 좀 더 짙은 회색으로 변경 */
+  font-size: 18px; /* 텍스트 크기 확대 */
+  font-weight: 600; /* 텍스트 두께를 좀 더 굵게 설정 */
+  letter-spacing: 1.2px; /* 글자 사이 간격을 약간 넓혀 깔끔한 느낌 */
+  text-transform: uppercase; /* 모든 글자를 대문자로 변경하여 시각적 강조 */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* 부드러운 그림자 효과 추가 */
+  font-family: "Arial", sans-serif; /* 세련된 느낌의 폰트 사용 */
+  padding: 10px 20px; /* 상하좌우 패딩 추가로 여백 확보 */
+  background-color: rgba(255, 255, 255, 0.8); /* 반투명 흰색 배경 추가 */
+  border-radius: 8px; /* 배경에 둥근 모서리 추가 */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* 부드러운 박스 그림자 */
 }
 
 /* 연락처와 소셜 미디어 섹션 */
@@ -44,25 +56,42 @@ footer {
   align-items: center;
   gap: 10px;
   margin: 0;
+  font-size: 16px; /* 텍스트 크기를 살짝 키움 */
 }
 
 .footer-contact img,
 .footer-social img {
-  width: 30px;
-  height: 30px;
-  filter: brightness(0); /* 아이콘 색상을 검정으로 변경 */
+  width: 20px;
+  height: 20px;
+  filter: brightness(0.5) sepia(1) hue-rotate(180deg) saturate(5); /* 아이콘을 세련된 톤으로 변경 */
+}
+
+.footer-contact img,
+.footer-social img {
+  width: 25px; /* 아이콘의 너비를 40px로 키움 */
+  height: 25px; /* 아이콘의 높이를 40px로 키움 */
+  filter: brightness(0.5) sepia(1) hue-rotate(180deg) saturate(5); /* 아이콘의 색상 유지 */
 }
 
 .social2-icons {
   display: flex;
-  gap: 20px;
+  gap: 15px; /* 아이콘 간의 간격 */
+  flex-direction: row; /* 아이콘을 가로로 배치 */
+  justify-content: center; /* 가운데 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
 }
 
 .social2-icons a img {
-  width: 30px;
-  height: 30px;
-  background-color: rgba(0, 0, 0, 0.1);
+  width: 40px; /* 아이콘 너비 확대 */
+  height: 40px; /* 아이콘 높이 확대 */
+  background-color: rgba(0, 0, 0, 0.05); /* 배경 처리를 유지 */
   border-radius: 50%;
-  padding: 5px;
-  filter: brightness(0); /* 소셜 아이콘 색상을 검정으로 변경 */
+  padding: 8px; /* 패딩을 늘려 아이콘이 더 커 보이도록 조정 */
+  transition: background-color 0.3s ease;
+  filter: brightness(0) invert(1); /* 색상 유지 */
+}
+
+.social2-icons a:hover img {
+  background-color: rgba(0, 0, 0, 0.2); /* 호버 시 배경 색상이 진해짐 */
+  filter: brightness(0) invert(0); /* 호버 시 아이콘 색상 검정으로 변경 */
 }

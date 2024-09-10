@@ -69,7 +69,7 @@
 
 .more-button {
   text-align: center;
-  margin-top: -10px; /* 버튼을 더 위로 올리기 위해 음수 값을 증가 */
+  margin-top: 10px; /* 버튼을 더 위로 올리기 위해 음수 값을 증가 */
 }
 
 .more-button button {

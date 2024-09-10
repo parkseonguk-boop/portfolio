@@ -1,6 +1,6 @@
 #content1 {
   width: 100%;
-  padding: 50px 0;
+  padding: 50px;
   background: linear-gradient(135deg, #1a1a1a, #000); /* 그라데이션 추가 */
   color: #fff;
   display: flex;
@@ -15,7 +15,7 @@
   max-width: 1200px;
   width: 100%;
   margin-right: 70px;
-  transform: translate(50px, 70px);
+  transform: translate(50px, 50px);
 }
 
 .content-item {
@@ -62,7 +62,7 @@
 
 .content-video {
   width: 35%;
-  margin-left: -150px; 
+  margin-left: -150px;
 }
 
 .content-video video {

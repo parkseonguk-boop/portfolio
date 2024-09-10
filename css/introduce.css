@@ -1,7 +1,11 @@
 #introduce {
   width: 100%;
   height: 100vh; /* 화면 높이만큼 채워서 세로 중앙 정렬 */
-  background: linear-gradient(135deg, #1a1a1a, #000000); /* 그라데이션 배경 */
+  background: linear-gradient(
+    135deg,
+    #383838,
+    #000000
+  ); /* 부드러운 그라데이션 */
   color: #fff;
   box-sizing: border-box;
 
@@ -109,7 +113,7 @@
 .details-section .education img {
   width: 200px; /* 너비를 200px로 설정 */
   height: auto; /* 높이는 자동으로 설정하여 비율을 유지 */
-  margin-left: 20px;
+  margin-left: 0px;
   object-fit: contain; /* 비율 유지하면서 이미지가 컨테이너에 맞게 조정됨 */
 }
 
